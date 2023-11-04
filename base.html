@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>{% block title %}{% endblock %} - Omay Operations</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  {% block head %}{% endblock %}
+</head>
+
+<body class="bottom">
+  <div class="top header">
+    <h1 class="inline" onclick="location.href=location.origin;">Omay Operations</h1>
+    <div id="webring-wrapper">
+      <a href="https://webring.hackclub.com/" id="previousBtn" class="webring-anchor" title="Previous">‹</a>
+      <a href="https://webring.hackclub.com/" class="webring-logo" title="Hack Club Webring" alt="Hack Club Webring"></a>
+      <a href="https://webring.hackclub.com/" id="nextBtn" class="webring-anchor" title="Next">›</a>
+      <script src="https://webring.hackclub.com/public/embed.min.js"></script>
+    </div>
+    <span class="material-icons" onclick="showSide();">menu</span>
+  </div>
+  <div class="sidebar top">
+    <span class="material-icons" onclick="hideSide();">close</span>
+    <ul>
+      <li><a href="/projects" class="top">Projects</a></li>
+      <li><a href="/about" class="top">About</a></li>
+    </ul>
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider round"></span>
+    </label>
+  </div>
+  <div class="spacer" style="--h:30px;"></div>
+  {% block content %}{% endblock %}
+  <script src="/script.js"></script>
+  <div class="noise"></div>
+</body>
+
+</html>

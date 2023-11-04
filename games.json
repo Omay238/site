@@ -1,0 +1,24 @@
+{
+	"games": [
+		{
+			"name": "Sokoban+",
+			"description": "This is my remake of Sokoban in sprig. Not much to say",
+			"url": "https://editor.sprig.hackclub.com/?file=https://raw.githubusercontent.com/hackclub/sprig/main/games/sokoban_plus.js"
+		},
+    {
+			"name": "Demo 1",
+			"description": "First coding demo. Linked sprites.",
+			"url": "https://editor.sprig.hackclub.com/?file=https://raw.githubusercontent.com/hackclub/sprig/main/games/coding_demo_1_linked_sprites.js"
+		},
+    {
+			"name": "Demo 2",
+			"description": "Second coding demo. Multiple maps.",
+			"url": "https://editor.sprig.hackclub.com/?file=https://raw.githubusercontent.com/hackclub/sprig/main/games/coding_demo_2_multiple_maps.js"
+		},
+    {
+			"name": "2D Life",
+			"description": "This is an implementation of conway's game of life with an adjustable ruleset.",
+			"url": "https://editor.sprig.hackclub.com/?file=https://raw.githubusercontent.com/hackclub/sprig/main/games/2D_life.js"
+		}
+	]
+}

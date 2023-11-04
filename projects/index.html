@@ -1,0 +1,17 @@
+{% extends "../base.html" %}
+{% block title %}Projects{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="/lists.css" />
+{% endblock %}
+{% block content %}
+  {% for project in projects %}
+    <div class="spacer" style="--h:20px"></div>
+    <div class="top li">
+      <h1>{{ project.name }}</h1>
+      <p>{{ project.description }}<br>View it <a href="{{ project.url }}">here</a>.</p>
+    </div>
+  {% else %}
+    <div class="spacer" style="--h:20px"></div>
+    <h1 class="top li" style="border-radius:5px;"><br><br>No projects<br><br></p>
+  {% endfor %}
+{% endblock %}

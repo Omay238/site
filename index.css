@@ -1,0 +1,7 @@
+button {
+  width: 95vw;
+  position: absolute;
+  left: 2.5vw;
+  height: 50px;
+  cursor: pointer;
+}

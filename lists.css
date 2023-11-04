@@ -1,0 +1,6 @@
+.li {
+  border-radius: 5px;
+}
+p.li > * {
+  margin: 10px;
+}
